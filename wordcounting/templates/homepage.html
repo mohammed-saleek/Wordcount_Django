@@ -1,0 +1,10 @@
+{% csrf_token %}
+<center>
+    <h3>Welcome to word counting</h3>
+    <form action="{% url 'word_count' %}" method="GET">
+        <label for="your_name">Enter Paragraph: </label><br>
+        <textarea id="para" name="para" rows="4" cols="50"></textarea>
+        <br />
+        <input type="submit" value="OK">
+    </form>
+</center>

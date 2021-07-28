@@ -1,0 +1,7 @@
+{% csrf_token %}
+<center>
+    <h2>Word Counting</h2>
+</center>
+{% for word, count in word_count.items %}
+<p>{{ word }} : {{ count }}</p>
+{% endfor %}
